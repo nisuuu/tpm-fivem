@@ -19,9 +19,9 @@ RegisterCommand("tpm", function(source)
                 Citizen.Wait(5)
             end
 
-            TriggerEvent("chatMessage", "[Server]", {255, 0, 0}, "Teleported | dc.gg/exus")
+            TriggerEvent("chatMessage", "[Server]", {255, 0, 0}, "Teleported | dc.gg/srgz")
         else
-            TriggerEvent("chatMessage", "[Server]", {255, 0, 0}, "No Waypoints Selected | dc.gg/exus")
+            TriggerEvent("chatMessage", "[Server]", {255, 0, 0}, "No Waypoints Selected | dc.gg/srgz")
         end
     end)
 
@@ -29,6 +29,6 @@ RegisterCommand("tpm", function(source)
 RegisterCommand("tpco", function(source, args)
     local ped = GetPlayerPed(-1)
     local coords = GetEntityCoords(ped)
-    TriggerEvent("chatMessage", "[Server]", {255, 0, 0}, "Your coordinates" .. coords .. " | dc.gg/exus")
+    TriggerEvent("chatMessage", "[Server]", {255, 0, 0}, "Your coordinates" .. coords .. " | dc.gg/srgz")
     AddBlipForCoord(coords)
 end)
